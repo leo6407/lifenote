@@ -36,10 +36,35 @@
             <h1>首頁</h1>
         </a>
         <button class="w3-bar-item w3-button" onclick="w3_close()">Close<i class="fa fa-remove"></i></button>
-        <a href="Movie.html" class="w3-bar-item w3-button">電影</a>
-        <a href="Philosophy.html" class="w3-bar-item w3-button">哲學</a>
-        <a href="Art.html" class="w3-bar-item w3-button">藝術</a>
-        <a href="Psychology.html" class="w3-bar-item w3-button">心理學</a>
+
+        <div class="w3-bar-item w3-button" onclick="movieAcc()">電影
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div id="movieAcc" class="w3-hide w3-light-grey w3-card-4">
+            <a href="Movie.html" class="w3-bar-item w3-button">電影</a>
+        </div>
+
+        <div class="w3-bar-item w3-button" onclick="PhilosophyAcc()">哲學
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div id="PhilosophyAcc" class="w3-hide w3-white w3-card-4">
+            <a href="Philosophy.html" class="w3-bar-item w3-button">哲學</a>
+        </div>
+
+        <div class="w3-bar-item w3-button" onclick="ArtAcc()">藝術
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div id="ArtAcc" class="w3-hide w3-white w3-card-4">
+            <a href="Art.html" class="w3-bar-item w3-button">藝術</a>
+        </div>
+
+        <div class="w3-bar-item w3-button" onclick="PsychologyAcc()">心理學
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div id="PsychologyAcc" class="w3-hide w3-white w3-card-4">
+            <a href="Psychology.html" class="w3-bar-item w3-button">心理學</a>
+        </div>
+
         <a href="About.html" class="w3-bar-item w3-button">關於我</a>
     </nav>
 
@@ -105,9 +130,7 @@
             <a href="#myHeader"><span class="w3-xlarge">
                     <i class="fa fa-chevron-circle-up"></i></span></a>
         </div>
-        <p>Copyright © 2023 宋志隆. 保留一切權利。 隱私權政策 | 使用條款 | 銷售及退款 | 法律聲明 | 網站地圖
-            <a href="" class="w3-button w3-right" target="_blank">志隆的網頁 Reference</a>
-        </p>
+        <p>Copyright © 2023 宋志隆. 保留一切權利。 隱私權政策 | 使用條款 | 銷售及退款 | 法律聲明 | 網站地圖</p>
     </footer>
 
 
@@ -154,6 +177,50 @@
             }
             x[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " w3-white";
+        }
+
+        function movieAcc() {
+            var x = document.getElementById("movieAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function PhilosophyAcc() {
+            var x = document.getElementById("PhilosophyAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function ArtAcc() {
+            var x = document.getElementById("ArtAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function PsychologyAcc() {
+            var x = document.getElementById("PsychologyAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-green", "");
+            }
         }
 
     </script>
