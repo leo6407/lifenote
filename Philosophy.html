@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhilosophyNote</title>
+    <meta name="keywords" content="Philosophy"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -44,18 +45,17 @@
     </nav>
 
     <!-- Header -->
-    <header class="w3-container w3-padding-32" id="myHeader">
-        <i onclick="w3_open()" class="fa fa-bars w3-button w3-xlarge"></i>
-        <div class="w3-center">
-            <h4>哲學筆記</h4>
-            <h1 class="w3-xxxlarge w3-animate-bottom">Philosophy</h1>
-            <div class="w3-padding-32">
-                <button class="w3-button w3-xlarge w3-hover-text-yellow w3-hover-blue"
-                    onclick="document.getElementById('id01').style.display='block'"
-                    style="font-weight: 900;">這網頁的概念</button>
-            </div>
+    <header class="w3-container w3-top w3-orange w3-border-bottom w3-border-black" id="myHeader">
+        <div class="w3-bar w3-yellow">
+            <a href="javascript:void(0)" onclick="w3_open()" class="w3-bar-item fa fa-bars w3-button w3-xlarge"></a>
+            <a href="javascript:void(0)" class="w3-bar-item">Philosophy</a>
         </div>
     </header>
+
+    <div style="margin-top: 40px;">
+        <button class="w3-button w3-xlarge w3-hover-text-yellow w3-hover-blue"
+            onclick="document.getElementById('id01').style.display='block'" style="font-weight: 900;">這網頁的概念</button>
+    </div>
 
     <!-- Modal -->
     <div id="id01" class="w3-modal">
@@ -78,7 +78,7 @@
         </div>
     </div>
 
-    <div>
+    <div class="" style="margin-top: px;">
         <img src="Photo/schoolofathens.jpg" alt="SchoolOfAthens" style="width:100%">
     </div>
 
@@ -113,8 +113,6 @@
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
         }
-      
-
     </script>
 
 </body>
