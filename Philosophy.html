@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhilosophyNote</title>
+    <meta name="keywords" content="Philosophy" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -43,19 +44,45 @@
         <a href="About.html" class="w3-bar-item w3-button">關於我</a>
     </nav>
 
+
+
+
+
     <!-- Header -->
-    <header class="w3-container w3-padding-32" id="myHeader">
-        <i onclick="w3_open()" class="fa fa-bars w3-button w3-xlarge"></i>
-        <div class="w3-center">
-            <h4>哲學筆記</h4>
-            <h1 class="w3-xxxlarge w3-animate-bottom">Philosophy</h1>
-            <div class="w3-padding-32">
-                <button class="w3-button w3-xlarge w3-hover-text-yellow w3-hover-blue"
-                    onclick="document.getElementById('id01').style.display='block'"
-                    style="font-weight: 900;">這網頁的概念</button>
-            </div>
+
+    <header class="w3-container w3-white w3-top w3-border-bottom w3-border-black" id="myHeader">
+
+        <div class="w3-bar">
+
+            <div onclick="w3_open()" class="w3-bar-item w3-hover-none fa fa-bars w3-button w3-xlarge"
+                style="margin-top: 5px;"></div>
+            <a href="Philosophy.html" class="w3-bar-item w3-hover-none w3-button w3-xlarge">Philosophy</a>
+            <div class="w3-bar-item w3-right fa fa-search w3-xlarge" style="margin-top: 5px;"></div>
+
         </div>
+
     </header>
+
+
+
+
+
+
+
+
+    <div class="" style="margin-top: 40px;">
+        <img src="Photo/schoolofathens.jpg" alt="SchoolOfAthens" style="width:100%">
+    </div>
+
+
+
+
+
+
+    <div>
+        <button class="w3-button w3-xlarge w3-hover-text-yellow w3-hover-blue"
+            onclick="document.getElementById('id01').style.display='block'" style="font-weight: 900;">這網頁的概念</button>
+    </div>
 
     <!-- Modal -->
     <div id="id01" class="w3-modal">
@@ -78,15 +105,34 @@
         </div>
     </div>
 
-    <div>
-        <img src="Photo/schoolofathens.jpg" alt="SchoolOfAthens" style="width:100%">
+
+
+
+
+
+    <div class="w3-container">
+
+        
+        <p>哲學是研究普遍的、基本問題的學科，包括存在、知識、價值、理智、心靈、語言等領域。
+            哲學與其他學科不同之處在於哲學有獨特之思考方式，例如批判的方式、通常是系統化的方法，並以理性論證為基礎。
+            從歷史上看，許多單獨的學科，例如物理學和心理學，都是哲學的一部分。然而，它們被認為是現代意義上的獨立學科。
+        </p>
+
+
     </div>
+
+
+
+
+
+
+
 
 
     <br>
 
     <!-- Footer -->
-    <footer class="w3-container w3-padding-16 w3-light-grey">
+    <footer class="w3-container w3-padding-16 w3-grey">
         <h3>Footer</h3>
         <p>Powered by <a href="https://leo6407.github.io/ProjectFamily/" target="_blank">宋志隆</a></p>
         <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
@@ -113,8 +159,6 @@
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
         }
-      
-
     </script>
 
 </body>
