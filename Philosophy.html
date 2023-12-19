@@ -226,14 +226,20 @@
 
 
 
-        <div class="w3-container">
-            <table class="w3-table">
+        <div class="w3-container w3-hoverable w3-responsive">
 
+            <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for name.." id="myTableInput"
+                onkeyup="myTableFunction()">
 
-                <tr>
-                    <th>Name</th>
+            <table class="w3-table w3-margin-top w3-striped w3-bordered w3-border" id="myTable">
 
-                </tr>
+                <!--Flipping the Stripes-->
+                <thead>
+                    <tr class="w3-light-grey">
+                        <th>Name</th>
+
+                    </tr>
+                </thead>
 
                 <tr>
                     <td>Plato</td>
@@ -298,6 +304,26 @@
             </table>
         </div>
 
+        <script>
+            function myTableFunction() {
+                var input, filter, table, tr, td, i;
+                input = document.getElementById("myTableInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+        </script>
 
 
 
@@ -314,18 +340,49 @@
 
         <div>
 
-            Philosophy of Law
-            Philosophy of Religion
-            Philosophy of Science
-            Philosophy of Mind
-            Philosophy of the Arts
-            Philosophy of History
-            Philosophy of Language
-            Philosophy of Literature
-            Philosophy of Feminism
-            Political Philosophy
+            <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for name.." id="myListInput" onkeyup="myListFunction()">
+
+
+            <ul class="w3-ul w3-margin-top w3-hoverable" id="myUL">
+
+                <li>Philosophy of Law</li>
+                <li>Philosophy of Religion</li>
+                <li>Philosophy of Science</li>
+                <li>Philosophy of Mind</li>
+                <li>Philosophy of the Arts</li>
+                <li>Philosophy of History</li>
+                <li>Philosophy of Language</li>
+                <li>Philosophy of Literature</li>
+                <li>Philosophy of Feminism</li>
+                <li>Political Philosophy</li>
+
+            </ul>
 
         </div>
+
+
+        <script>
+            function myListFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myListInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    txtValue = li[i].textContent || li[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+
+
+
+
 
         <br>
         <a href="https://philosophy.fsu.edu/undergraduate-study/why-philosophy/What-is-Philosophy"
