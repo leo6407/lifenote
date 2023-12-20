@@ -47,9 +47,7 @@
 
 
 
-
     <!-- Header -->
-
     <header class="w3-container w3-white w3-top w3-border-bottom w3-border-black" id="myHeader">
 
         <div class="w3-bar">
@@ -66,15 +64,10 @@
 
 
 
-
-
-
-
+    <!-- Cover Photo -->
     <div class="" style="margin-top: 40px;" id="schoolofathens">
         <img src="Photo/schoolofathens.jpg" alt="SchoolOfAthens" style="width:100%">
     </div>
-
-
 
 
 
@@ -104,8 +97,6 @@
             </footer>
         </div>
     </div>
-
-
 
 
 
@@ -180,6 +171,7 @@
 
 
 
+
         <h1><b>Ethics</b></h1>
         <p>
             The study of ethics often concerns what we ought to do and what it would be best to do.
@@ -196,6 +188,7 @@
             <p><i>How should I treat others?</i></p>
 
         </div>
+
 
 
 
@@ -216,6 +209,7 @@
 
 
 
+
         <h1><b>History of Philosophy</b></h1>
         <p>
             The study of philosophy involves not only forming one's own answers to such questions, but also seeking to
@@ -223,6 +217,7 @@
             philosophy is its history, a history of answers and arguments about these very questions. In studying the
             history of philosophy one explores the ideas of such historical figures as:
         </p>
+
 
 
 
@@ -242,7 +237,7 @@
                 </thead>
 
                 <tr>
-                    <td>Plato</td>
+                    <td><a href="">Plato</a></td>
 
                 </tr>
 
@@ -304,27 +299,6 @@
             </table>
         </div>
 
-        <script>
-            function myTableFunction() {
-                var input, filter, table, tr, td, i;
-                input = document.getElementById("myTableInput");
-                filter = input.value.toUpperCase();
-                table = document.getElementById("myTable");
-                tr = table.getElementsByTagName("tr");
-                for (i = 0; i < tr.length; i++) {
-                    td = tr[i].getElementsByTagName("td")[0];
-                    if (td) {
-                        txtValue = td.textContent || td.innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            tr[i].style.display = "";
-                        } else {
-                            tr[i].style.display = "none";
-                        }
-                    }
-                }
-            }
-        </script>
-
 
 
 
@@ -338,9 +312,12 @@
         </p>
 
 
+
+
         <div>
 
-            <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for name.." id="myListInput" onkeyup="myListFunction()">
+            <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for name.." id="myListInput"
+                onkeyup="myListFunction()">
 
 
             <ul class="w3-ul w3-margin-top w3-hoverable" id="myUL">
@@ -361,30 +338,13 @@
         </div>
 
 
-        <script>
-            function myListFunction() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById("myListInput");
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("myUL");
-                li = ul.getElementsByTagName("li");
-                for (i = 0; i < li.length; i++) {
-                    txtValue = li[i].textContent || li[i].innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "";
-                    } else {
-                        li[i].style.display = "none";
-                    }
-                }
-            }
-        </script>
-
-
-
-
 
 
         <br>
+
+
+
+
         <a href="https://philosophy.fsu.edu/undergraduate-study/why-philosophy/What-is-Philosophy"
             class="w3-text-blue w3-right">
             本文取自佛羅里達州立大學哲學系</a>
@@ -395,21 +355,102 @@
 
 
 
-
-
     <br>
 
+
+
+
     <!-- Footer -->
-    <footer class="w3-container w3-padding-16 w3-grey">
-        <h3>Footer</h3>
+    <footer class="w3-row w3-grey">
+
+        <div class="w3-container w3-col l2 w3-border w3-border-black">
+            <p>NEWSLETTER</p>
+            <p>Subscribe to our newsletter</p>
+        </div>
+
+        <div class="w3-container w3-col l2 w3-border w3-border-black">
+
+            <p>CLIENT SERVICES</p>
+
+            <p>FAQ</p>
+            <p>Track Order</p>
+            <p>Returns</p>
+            <p>Delivery</p>
+            <p>Payment</p>
+
+        </div>
+
+        <div class="w3-container w3-col l2 w3-border w3-border-black">
+
+            <p>THE COMPANY</p>
+
+            <p>Careers</p>
+            <p>Careers - Design</p>
+            <p>Legal</p>
+            <p>Privacy Policy and Cookies</p>
+            <p>Cookies Settings</p>
+            <p>World Food Programme</p>
+
+        </div>
+
+        <div class="w3-container w3-col l2 w3-border w3-border-black">
+
+            <p>CONNECT</p>
+
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Tiktok</p>
+            <p>Spotify</p>
+
+        </div>
+
+        <div class="w3-container w3-col l2 w3-border w3-border-black">
+
+            <p>BOUTIQUES</p>
+
+            <p>Store appointment</p>
+            <p>Find a store nearby</p>
+            <p>Country / Region: Taiwan Region</p>
+            <p>Language: English</p>
+
+        </div>
+
+        <div class="w3-container w3-col l2 w3-border w3-border-black">
+
+            <p>CONTACT US</p>
+
+            <p>Our client advisors are available Mon-Sat 10am-9pm</p>
+
+            <p>CALL US</p>
+            <p>+886 277 039 068</p>
+
+            <p>LIVECHAT</p>
+            <p>Our Client Advisors are available</p>
+
+            <p>EMAIL US</p>
+
+        </div>
+
+
         <p>Powered by <a href="https://leo6407.github.io/ProjectFamily/" target="_blank">宋志隆</a></p>
+        <p>Copyright © 2023 宋志隆. 保留一切權利。 隱私權政策 | 使用條款 | 銷售及退款 | 法律聲明 | 網站地圖</p>
+
+
         <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
             <span class="w3-text w3-padding">Go To Top</span>
-            <a href="#myHeader"><span class="w3-xlarge">
-                    <i class="fa fa-chevron-circle-up"></i></span></a>
+            <a href="#myHeader">
+                <span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i>
+                </span>
+            </a>
         </div>
-        <p>Copyright © 2023 宋志隆. 保留一切權利。 隱私權政策 | 使用條款 | 銷售及退款 | 法律聲明 | 網站地圖</p>
+
+
+
+
     </footer>
+
+
 
 
     <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
@@ -427,6 +468,56 @@
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
         }
+
+
+
+
+        // Table Search
+        function myTableFunction() {
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("myTableInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+
+
+
+        // List search
+        function myListFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myListInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                txtValue = li[i].textContent || li[i].innerText; if
+                    (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+
+
+
+
+
+
     </script>
 
 </body>
